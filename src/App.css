@@ -1,17 +1,5 @@
-.App {
-  text-align: center;
-}
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -35,4 +23,103 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  font-family: "Roboto";
+}
+.container {
+  width: 70%;
+  margin-left: 15%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.padd {
+  padding: 15px;
+}
+.padd h1 {
+  text-align: center;
+  color: #27ae60;
+}
+.search-field {
+  width: 80%;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: auto;
+  outline: none;
+  text-indent: 20px;
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  border: 0.2px solid #2ecc71;
+}
+.search-field:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+.movie {
+  padding: 5px;
+  margin-top: 30px;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-left: 10%;
+
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.poster {
+  height: 100%;
+  width: 40%;
+  overflow: hidden;
+}
+.details {
+  width: 55%;
+  height: 100%;
+}
+.img-poster {
+  width: 100%;
+  height: 100%;
+}
+.pad p {
+  font-size: 20px;
+}
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+.ratings {
+  display: flex;
+  justify-content: space-between;
+}
+.ratings > div {
+  margin-right: 25px;
+}
+.input-group {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+.btn {
+  width: 18%;
+  height: 60px;
+  font-size: 24px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  background-color: #27ae60;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  background-color: #2ecc71;
+  box-shadow: 0 0px 18px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.btn:active {
+  background-color: #2ecc71;
+  box-shadow: 0 5px #95a5a6;
+  transform: translateY(4px);
 }
